@@ -5,11 +5,10 @@ dotenv.config();
 
 const db = new Client({
   host: process.env.BASE_URL,
-  port: process.env.PORT,
+  port: process.env.DB_PORT,
   user: process.env.USER,
   password: process.env.PASSWORD,
   database: process.env.DATABASE,
-  ssl: { rejectUnauthorized: false },
 });
 
 export default db;

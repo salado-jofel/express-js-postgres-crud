@@ -9,8 +9,8 @@ db.connect().then(() => {
   console.log("postgres connected successfully!");
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`server is running... ${process.env.PORT || 3000}`);
+app.listen(3000, () => {
+  console.log(`server is running... 3000`);
 });
 
 app.use("/api/v1/contacts", contactRouter);
