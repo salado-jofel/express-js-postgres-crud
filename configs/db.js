@@ -2,7 +2,11 @@ import { Client } from "pg";
 import dotenv from "dotenv";
 
 dotenv.config();
-console.log("Connecting to database...: ", process.env.CONNECTION_STRING_NEON);
+console.log("process.env.BASE_URL: ", process.env.BASE_URL);
+console.log("process.env.DB_PORT: ", process.env.DB_PORT);
+console.log("process.env.DB_USER: ", process.env.DB_USER);
+console.log("process.env.DB_PASSWORD: ", process.env.DB_PASSWORD);
+console.log("process.env.DATABASE: ", process.env.DATABASE);
 const db = new Client({
   host: process.env.BASE_URL,
   port: process.env.DB_PORT,
