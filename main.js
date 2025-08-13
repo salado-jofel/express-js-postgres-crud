@@ -9,9 +9,8 @@ const app = express();
 app.use(express.json());
 
 db.connect()
-  .then(() => console.log("Connected to Neon PostgreSQL"))
+  .then(() => console.log("Connected to Supabase database successfully!"))
   .catch((err) => console.error("DB connection error:", err));
-console.log("MAIN PORT: ", process.env.DB_PORT);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

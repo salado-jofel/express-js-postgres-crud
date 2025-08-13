@@ -21,7 +21,7 @@ export const storeContact = (req, res) => {
     }
 
     return res.status(200).json({
-      message: "Store contact successfully!",
+      message: "ELLAH BEAUTIFUL EYES SUCCESSFULLAY!",
       status: 200,
       data: {
         contact: result.rows,
