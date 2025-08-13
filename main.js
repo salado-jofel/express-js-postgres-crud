@@ -5,9 +5,9 @@ import contactRouter from "./routes/contact-routes.js";
 const app = express();
 app.use(express.json());
 
-db.connect().then(() => {
-  console.log("postgres connected successfully!");
-});
+db.connect()
+  .then(() => console.log("Connected to Supabase PostgreSQL"))
+  .catch((err) => console.error("DB connection error:", err));
 
 app.listen(3000, () => {
   console.log(`server is running... 3000`);
