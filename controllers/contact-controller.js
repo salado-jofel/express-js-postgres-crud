@@ -16,9 +16,6 @@ export const storeContact = (req, res) => {
       return res.status(500).json({
         message: "Failed to store contact!",
         status: 500,
-        data: {
-          contact: result.rows,
-        },
       });
     }
 
