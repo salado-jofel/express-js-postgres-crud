@@ -16,6 +16,7 @@ export const storeContact = (req, res) => {
       return res.status(500).json({
         message: "Failed to store contact!",
         status: 500,
+        error: err,
       });
     }
 
@@ -37,7 +38,7 @@ export const indexContacts = (req, res) => {
       return res.status(500).json({
         message: "Failed to index contacts!",
         status: 500,
-        data: { contacts: [] },
+        error: err,
       });
     } else {
       return res.status(200).json({
