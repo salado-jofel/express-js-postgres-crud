@@ -42,7 +42,7 @@ export const indexContacts = (req, res) => {
       });
     } else {
       return res.status(200).json({
-        message: "ELLAH BEAUTIFUL EYES SUCCESSFULLAY!",
+        message: "ELLAH BEAUTIFUL EYES SUCCESSFULLAY! EYYYYY",
         status: 200,
         data: {
           contacts: result.rows,
