@@ -20,3 +20,11 @@ app.use("/api/v1/contacts", contactRouter);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+// DB_USER=postgres.iwauxognixhgwftlvvlj
+// DB_PASSWORD=Ws23833hzzj123k!
+// BASE_URL=aws-1-ap-southeast-1.pooler.supabase.com
+// DB_PORT=5432
+// DATABASE=postgres
+// JWT_SECRET=f2c9b7012ff54a7d0d02e0954aec9436
+// JWT_REFRESH_SECRET=af5df1e673085794ae41cd5cc965cfb5
