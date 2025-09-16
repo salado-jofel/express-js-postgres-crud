@@ -69,7 +69,12 @@ export const login = async (req, res) => {
     res.json({
       accessToken,
       refreshToken,
-      user: { id: user.id, name: user.name, role: user.role },
+      user: {
+        id: user.id,
+        name: user.name,
+        role: user.role,
+        email: user.email,
+      },
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
